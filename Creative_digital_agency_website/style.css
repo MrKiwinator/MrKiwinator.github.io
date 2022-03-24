@@ -59,6 +59,13 @@ body {
 
 /* ------------------- PAGE TOP (nav, header) ---------------------- */
 
+#page_top {
+    background-image: url("img/Layer_1.png");
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 100%;
+}
+
 /* ------------------------------ nav -------------------------------*/
 
 nav {
@@ -69,17 +76,6 @@ nav {
     display: flex;
     min-height: 115px;
     justify-content: space-between;
-}
-
-#nav_menu {
-    display: none;
-}
-
-#page_top {
-    background-image: url("img/Layer_1.png");
-    background-size: cover;
-    min-height: 100vh;
-    min-width: 100%;
 }
 
 #logo {
@@ -144,6 +140,55 @@ nav {
     position: relative;
     top: 2px;
 }
+
+
+/* -------------------------- nav-menu --------------------------- */
+
+#nav_menu {
+    display: block;
+    position: relative;
+}
+
+#page_top p {
+    margin: 0;
+}
+
+#menu {
+    width: 100px;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid white;
+}
+
+#drop_down_menu > p {
+    width: 100px;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid white;
+}
+
+#drop_down_menu {
+    position: absolute;
+    display: none;
+}
+
+#drop_down_menu:hover,
+#menu:hover + #drop_down_menu {
+    display: block;
+}
+
+#menu:active + #drop_down_menu {
+    display: block;
+}
+
+
+
+/*
+#nav_menu {
+    display: none;
+}
+*/
+
 
 /* ---------------------------- Header -------------------------- */
 
