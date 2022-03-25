@@ -180,7 +180,12 @@ nav {
 #drop_down_list {
     position: absolute;
     display: none;
-    right: calc(44vw - 25px);
+}
+
+#drop_down_menu {
+    width: 200px;
+    position: relative;
+    left: 5%;
 }
 
 #drop_down_list:hover,
@@ -718,7 +723,6 @@ p > img {
     }
 
     #nav_flex > * {
-        flex: 1 1 30%;
         text-align: center;
     }
 
