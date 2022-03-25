@@ -14,8 +14,7 @@
 <body>
     <div id="page_top">
         
-        <!--
-            <nav id="nav_bar" class="myriad_pro_regular">
+        <nav id="nav_bar" class="myriad_pro_regular">
             <div id="logo">
                 <span><img src="img/logo.png"</span>
             </div>
@@ -36,23 +35,35 @@
                 </div>
             </div>
         </nav>
-        -->
-        
-        <nav id="nav_menu" class="myriad_pro_regular">
-            <div id="menu">
-                <p>Menu</p> 
-            </div>
-            <div id="drop_down_menu">           
-                <p>Home</p>
-                <p>Pages</p>
-                <p>Features</p>
-                <p>Extensions</p>
-                <p>Tutorials</p>
-                <p>Contact us</p>
-            </div> 
                 
+        <!-- media query -->
+
+        <nav id="nav_menu" class="myriad_pro_regular">
+            <div id="nav_flex">
+                <div id="logo">
+                    <span><img src="img/logo.png"</span>
+                </div>
+                <div id="drop_down_menu">
+                    <button id="menu">
+                        Menu 
+                    </button>
+                    <div id="drop_down_list">           
+                        <a href="">Home</a>
+                        <a href="">Pages</a>
+                        <a href="">Feature</a>
+                        <a href="">Extensions</a>
+                        <a href="">Tutorials</a>
+                        <a href="">Contact us</a>
+                    </div>
+                </div>                
+                <div id="social_bar">
+                    <span><a href="/"><img src="img/facebook.png" alt="Facebook" id="fb"></a></span>
+                    <span><a href="/"><img src="img/twitter.png" alt="Twitter" id="tw"></a></span>
+                    <span><a href="/"><img src="img/skype.png" alt="Skype" id="sk"></a></span>
+                    <span><a href="/"><img src="img/linkedin.png" alt="LinkedIn" id="ld"></a></span>
+                </div>
+            </div>
         </nav>
-        
 
         <header>
             <h1 class="gotham_bold uppercase">Creatives</h1>
@@ -70,6 +81,7 @@
             </div>
         </header>
     </div>
+
     <div id="container_about">
         <div class="background_letter gotham_medium uppercase"><img src="img/W.png"><p>We are an awesome</p></div>
         <div id="features">
