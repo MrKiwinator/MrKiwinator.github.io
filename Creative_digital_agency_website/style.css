@@ -63,9 +63,8 @@ body {
 #page_top {
     background-image: url("img/Layer_1.png");
     background-size: cover;
-    min-height: calc(100vh - 6.25rem);
+    min-height: 100vh;
     min-width: 100%;
-    padding-bottom: 6.25rem;
 }
 
 /* ------------------------------ nav -------------------------------*/
@@ -73,7 +72,7 @@ body {
 nav {
     font-size: 1.25rem;
     margin: 0;
-    padding: 0 12.5rem;
+    padding: 0 10.5vw;
     border-bottom: 1px solid rgb(161, 161, 161, 0.5);
     display: flex;
     min-height: 6.95rem;
@@ -112,7 +111,7 @@ nav {
 #social_bar {
     display: flex;
     align-items: center;
-    margin-left: 1rem;
+    margin-left: 2vw;
 }
 
 #social_bar > * {
@@ -149,7 +148,7 @@ nav {
 #nav_menu {
     display: none;
     position: relative;
-    padding: 2.82rem 12.5rem 2.82rem 12.5rem;
+    padding: 3vh 10.5vw 3vh 10.5vw;
     min-height: auto;
 }
 
@@ -207,17 +206,15 @@ nav {
 /* ---------------------------- Header -------------------------- */
 
 header {
-    padding: 0 12.5rem;
+    padding: 0 10.5vw;
 }
 
 #header_block {
     display: flex;
     flex-flow: column nowrap;
-    min-height: calc(100vh - 13.125rem);
+    min-height: calc(100vh - 6.95rem);
     justify-content: center;
 }
-
-
 
 h1 {
     box-sizing: content-box;
@@ -232,7 +229,7 @@ h1 {
 
 #header_text {
     font-size: 1.5rem;
-    letter-spacing: 21px;
+    letter-spacing: 1.2vw;
     padding-left: 21px;
     margin: 0;
     text-align: center;
@@ -279,7 +276,7 @@ h1 {
 #container_about {
     background-color: #11749e;
     margin: 0;
-    padding: 6.25rem;
+    padding: 10vh 10.5vw;
 }
 
 /* ---------------------- background letter ------------------------ */
@@ -298,11 +295,13 @@ h1 {
     text-align: center;
 }
 
+/* ------------------------------------------------------------------ */
+
 #features {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    margin: 4.25rem 12.5rem 0 12.5rem;
+    margin-top: 6.25vh;
 }
 
 .feature_header {
@@ -317,11 +316,11 @@ h1 {
 .feature_text {
     text-align: center;
     font-size: 1rem;
-    padding: 1.25rem 3.125rem;
+    padding: 1.25rem 2.125rem 1.25rem 2.125rem;
+    margin-bottom: 0px;
 }
 
 .feature {
-    
     flex: 1 1 20%;
 }
 
@@ -338,13 +337,13 @@ h1 {
 }
 
 #grid_1 {
-    padding: 5.25rem 12.5rem 7.25rem 12.5rem;
+    padding: 10vh 10.5vw 15vh 10.5vw;
     background-color: #222222;
 }
 
 #grid_4 {
-    padding: 5.25rem 12.5rem 7.25rem 12.5rem;
-    background-color: #f3f3f3;
+    padding: 10vh 10.5vw 15vh 10.5vw;
+    background-color: #f3f3f3;  
     color: #222222;
 }
 
@@ -365,8 +364,7 @@ h1 {
 
 #blog_area {
     margin: 0;
-    padding-top: 5.75rem;
-    padding-bottom: 6.25rem;
+    padding: 10vh 10.5vw 10vh 10.5vw;
     background-color: #ffffff;
     color: #222222;
 }
@@ -374,15 +372,14 @@ h1 {
 #blog_paragraph {
     font-size: 1.875rem;
     margin: 0;
-    padding-top: 2.625rem;
-    padding-bottom: 5rem;
+    padding-top: 4vh;
+    padding-bottom: 8vh;
     text-align: center;
 }
 
 #blog_flex {
     display: flex;
     flex-flow: row wrap;
-    margin: 0 12.5rem 0 12.5rem;
 }
 
 .blog {
@@ -395,16 +392,20 @@ h1 {
 }
 
 .blog_text {
-    padding-left: 14%;
-    padding-right: 14%;
+    padding-left: 10%;
+    padding-right: 10%;
     font-size: 1rem;
     line-height: 1.5em;
+}
+
+.blog_text p {
+    margin: 0;
 }
 
 /* ----------------------- QUICK ACTION AREA ----------------------- */
 
 #quick_action_area {
-    padding: 7.25rem 12.5rem 7.25rem 12.5rem;
+    padding: 10vh 10vw;
     background-color: #11749e;
 }
 
@@ -414,7 +415,7 @@ h1 {
 }
 
 .quick_action_container {
-    margin: 0px 0px 0px 3.125rem;
+    margin-left: 5%;
 }
 
 .quick_action_container {
@@ -430,79 +431,76 @@ h1 {
 .quick_action_text {
     font-size: 1rem;
     line-height: 1.5em;
-    margin-left: 3.125rem;
-    margin-right: 3.125rem;;
+    margin-left: 8%;
+    margin-right: 8%;
 }
 
-/* --------------------------- KEY FEATURE ------------------------- */
+/* --------------------------- KEY PARTICULARS ------------------------- */
 
-#key_feature {
+#key_particular {
     background-image: url("img/key_feature_layer.png");
     background-repeat: no-repeat;
     background-size: cover;
-    padding-left: 12.5rem;
-    padding-right: 12.5rem;
+    padding-left: 10.5vw;
+    padding-right: 10.5vw;
     position: relative;
 }
 
-#key_feature_img {
+#key_particular_img {
+    max-width: fit-content;
     position: absolute;
-    left: 60%;
-    bottom: 10%;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(50%, 50%);
 }
 
-#key_feature_container {
+#key_particular_container {
     max-width: 40%;
 }
 
-#key_feature_header > h3 {
+#key_particular_header > h3 {
     margin: 0;
-    padding-top: 14.25rem;
+    padding-top: 26vh;;
     text-transform: uppercase;
     font-family: "Gotham-Medium";
     font-size: 1.5rem;
 }
 
-#key_feature_text {
+#key_particular_text {
     font-size: 1rem;
     line-height: 1.8rem;
 }
 
-#key_feature_list {
-    padding-bottom: 14.25rem;
+#key_particular_list {
+    padding-bottom: 26vh;;
 }
 
-#key_feature_list > p {
+#key_particular_list > p {
     margin: 0;
-    margin-top: 1.5rem;
+    margin-top: 3vh;
+    padding: 1rem 0 1rem 1rem;
 }
 
-#feature_1,
-#feature_2,
-#feature_3 {
+#particular_1,
+#particular_2,
+#particular_3 {
     background-color: #11749e;
 }
 
-#feature_1 {
-    padding: 0.875rem 0 0.875rem 1.25rem;
+#particular_1 {
     width: 70%;
 }
 
-#feature_2 {
-    padding: 0.875rem 0 0.875rem 1.25rem;
+#particular_2 {
     width: 85%;
-}
-
-#feature_3 {
-    padding: 0.875rem 0 0.875rem 1.25rem;
 }
 
 /* ----------------------------TEAM AREA---------------------------- */
 
 #team {
     background-color: #f3f3f3;
-    padding: 4.25rem 12.5rem 6.875rem 12.5rem;
-    min-height: 100%;
+    padding: 8vh 10.5vw 8vh 10.5vw;
+    min-height: 84vh;
 }
 
 #team > * {
@@ -510,11 +508,15 @@ h1 {
 }
 
 #team_text {
-    margin-top: 4.375rem;
-    margin-bottom: 4.375rem;
+    margin-top: 4%;
+    margin-bottom: 4%;
     text-align: center;
     font-family: "Gotham-Book";
     font-size: 1.875rem;
+}
+
+#team_text p {
+    margin: 0
 }
 
 #team_flex {
@@ -530,7 +532,7 @@ h1 {
 
 .team_photo_text {
     background-color: #f3f3f3;
-    min-width: 12.5rem;
+    min-width: 200px;
     position: absolute;
     left: 25%;
     bottom: -10%;
@@ -555,18 +557,18 @@ h1 {
 
 
 #contact {
-    padding: 6.25rem 12.5rem 0px 12.5rem;
+    padding: 8vh 10.5vw 8vh 10.5vw;
     background-image: url("img/contact_layer.png");
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100vh;
+    min-height: 84vh;
 }
 
 #contact_flex {
     display: flex;
     flex-flow: row wrap;
     max-width: 100%;
-    margin-top: 75px;
+    margin-top: 5%;
     justify-content: space-between;
 }
 
@@ -652,13 +654,14 @@ textarea {
 /* --------------------------- FOOTER ---------------------- */
 
 #footer {
-    padding: 3.375rem 12.5rem 2.5rem 12.5rem;
+    padding: 6vh 10.5vw 6vh 10.5vw;
 }
 
 #flex_footer {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    align-items: center;
     font-size: 0.875rem;
 }
 
@@ -676,16 +679,18 @@ p > img {
     bottom: 0.375rem;
 }
 
+#rights_footer p {
+    margin: 0;
+}
+
+#design_footer p {
+    margin: 0;
+}
+
 
 /* ------------------- (media query) ------------------- */
 
 @media screen and (max-width: 1645px) {
-    
-    .feature {
-        flex: 1 1 50%;
-    }
-    
-    
     
     #grid_container img {
         width: auto;
@@ -696,26 +701,33 @@ p > img {
         flex: 1 1 40%;
     }
 
-    #blog_flex {
-        margin: 0 18.75rem;
-    }
-
     #blog_1,
     #blog_2 {
-        margin-bottom: 3.125rem;
+        margin-bottom: 10vh;
     }
+
+    #team_flex {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
 
     .team_member {
-        flex: 1 1 50%;
-    }
-
-    #team {
-        padding: 4.25rem 25rem 6.875rem 25rem;
+        flex: 1 1 40%;
     }
 
     #team_member_1,
     #team_member_2 {
-        margin-bottom: 6.25rem;
+        margin-bottom: 15vh;
+    }
+
+    #team_text {
+        margin-top: 8vh;
+        margin-bottom: 8vh;
+    }
+
+    .team_photo_text {
+        left: 19.5%;
     }
 }
 
@@ -749,28 +761,8 @@ p > img {
         justify-content: center;
     }
 
-    #tw,
-    #sk,
-    #ld {
-        margin-left: 0px;
-    }
-
     header {
-        padding: 0 6.25rem;
-    }
-
-    h1 {
-        font-size: 11.25rem;
-
-    }
-
-    #header_text {
-        font-size: 1rem;
-        letter-spacing: 1.25rem;
-    }
-    
-    #team {
-        padding: 4.25rem 18.75rem 6.875rem 18.75rem;
+        padding: 0 10.5vw;
     }
 
     #grid_container {
@@ -790,8 +782,8 @@ p > img {
     #grid_4 {
         background-color: transparent;
         padding: 0;
-        margin-left: 12.5rem;
-        margin-right: 12.5rem;
+        margin-left: 10.5vw;
+        margin-right: 10.5vw;
         padding: 1.25rem;
     }
 
@@ -813,8 +805,129 @@ p > img {
         margin-bottom: 84px;
     }
 
+    #key_particular_img {
+        left: 40%;
+    }
+
     #contact {
         padding-left: 6.25rem;
         padding-right: 6.25rem;
     }
+}
+
+@media screen and (max-width: 1280px) {
+    
+    #team_flex {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    #key_particular_img {
+        display: none;
+    }    
+
+    #key_particular_container {
+        min-width: 100%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    html,
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 12vw;
+    }
+
+    #header_text {
+        font-size: 1.8vw;
+        
+    }
+
+    .feature {
+        flex: 1 1 40%;
+        padding: 0 3vw;
+    }
+
+    #feature_1,
+    #feature_2 {
+        margin-bottom: 6vh;
+    }
+
+    .feature p {
+        text-align: justify;
+    }
+
+    #team_flex {
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+
+    #contact_flex {
+        flex-flow: column nowrap;
+    }
+
+    #contact_email,
+    #contact_phone {
+    margin-left: 0;
+}
+
+    #map {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    
+    #quick_action_flex {
+        flex-direction: column;
+    }
+
+    #quick_action_2 {
+        margin-top: 8vh;
+    }
+
+    #team_flex {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #wrapping_header {
+        top: 70%;
+    }
+}
+
+@media screen and (max-width: 780px) {
+
+    #features {
+        flex-direction: column;
+        margin-top: 8vh;
+    }
+
+    .feature p {
+        text-align: center;
+    }
+
+    #blog_flex {
+        flex-direction: column;
+    }
+
+    .blog {
+        margin: 3vh 0 !important;
+    }
+
+    #team_flex {
+        flex-direction: column;
+    }
+
+    .team_member {
+        margin: 5vh 0 !important;
+    }
+
+    .team_photo_text {
+        left: 33.4%;
+    }
+
 }
