@@ -343,7 +343,7 @@ h1 {
 }
 
 .feature p {
-    line-height: 2rem;
+    line-height: 1.8rem;
 }
 
 /* ------------------------- GRID CONTAINER ------------------------*/
@@ -967,18 +967,7 @@ textarea {
 
     #flex_footer {
         flex-flow: column;
-        align-items: flex-end;
+        align-items: center;
     }
     
-}
-
-@media screen and (max-width: 596px) {
-    
-    .background_letter {
-        display: flex;
-        justify-content: center;
-        vertical-align: middle;
-    }
-
-
 }
