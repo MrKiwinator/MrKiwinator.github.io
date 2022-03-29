@@ -976,12 +976,12 @@ textarea {
 
 @media screen and (max-width: 596px) {
     #wrapping_header {
-        transform: translate(-50%, -100%);
+        transform: translate(-50%, -50%);
     }
 }
 
 @media screen and (max-width: 525px) {
     #wrapping_header_about {
-        transform: translate(-50%, -100%);
+        transform: translate(-50%, -50%);
     }
 }
