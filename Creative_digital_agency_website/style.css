@@ -195,13 +195,9 @@ nav {
     z-index: 1;
 }
 
-/*
-
 #menu:active + #drop_down_list {
-    display: block;
+    display: none;
 }
-
-*/
 
 #drop_down_list > a:hover {
     background-color: #11749eea;
