@@ -341,6 +341,10 @@ h1 {
     flex: 1 1 20%;
 }
 
+.feature p {
+    line-height: 1.4rem;
+}
+
 /* ------------------------- GRID CONTAINER ------------------------*/
 
 #grid_container {
@@ -392,6 +396,7 @@ h1 {
     padding-top: 4vh;
     padding-bottom: 8vh;
     text-align: center;
+    line-height: 2.5rem;
 }
 
 #blog_flex {
@@ -530,6 +535,7 @@ h1 {
     text-align: center;
     font-family: "Gotham-Book";
     font-size: 1.875rem;
+    line-height: 2.5rem;
 }
 
 #team_text p {
@@ -970,6 +976,6 @@ textarea {
 
 @media screen and (max-width: 596px) {
     #wrapping_header {
-        top: 90%;
+        transform: translate(-50%, -100%);
     }
 }
