@@ -979,3 +979,9 @@ textarea {
         transform: translate(-50%, -100%);
     }
 }
+
+@media screen and (max-width: 525px) {
+    #wrapping_header_about {
+        transform: translate(-50%, -100%);
+    }
+}
