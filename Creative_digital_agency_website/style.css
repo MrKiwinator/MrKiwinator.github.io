@@ -299,14 +299,14 @@ h1 {
 
 .background_letter > p {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -150%);
     font-size: 2.375rem;
-    min-width: 100%;
+    margin: 0;
 }
 
 .background_letter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
     text-align: center;
 }
@@ -913,9 +913,6 @@ textarea {
         margin-right: 0;
     }
 
-    #wrapping_header {
-        top: 70%;
-    }
 }
 
 @media screen and (max-width: 780px) {
@@ -976,13 +973,12 @@ textarea {
 }
 
 @media screen and (max-width: 596px) {
-    #wrapping_header {
-        transform: translate(-50%, -50%);
+    
+    .background_letter {
+        display: flex;
+        justify-content: center;
+        vertical-align: middle;
     }
-}
 
-@media screen and (max-width: 525px) {
-    #wrapping_header_about {
-        transform: translate(-50%, -50%);
-    }
+
 }
