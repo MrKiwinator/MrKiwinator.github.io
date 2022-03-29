@@ -314,6 +314,7 @@ h1 {
 /* ------------------------------------------------------------------ */
 
 #features {
+    display: -webkit-box;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -772,6 +773,10 @@ textarea {
         padding: 0 10.5vw;
     }
 
+    #header_block {
+        min-height: calc(100vh - 24vh);
+    }
+
     #grid_container {
         display: flex;
         flex-flow: column nowrap;
@@ -907,6 +912,10 @@ textarea {
 }
 
 @media screen and (max-width: 780px) {
+
+    #drop_down_menu {
+        position: static;
+    }
 
     #features {
         flex-direction: column;
