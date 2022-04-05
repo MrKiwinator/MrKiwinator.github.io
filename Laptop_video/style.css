@@ -1,0 +1,48 @@
+html,
+body {
+    margin: 0;
+}
+
+#laptop_container {
+    position: relative;
+    display: inline-block;
+    font-size: 0;
+}
+
+#laptop {
+    z-index: 3;
+    position: relative;
+}
+
+#background {
+    position: absolute;
+    left: 92px;
+    top: 34px;
+    z-index: 1;
+}
+
+#cover {
+    position: absolute;
+    left: 92px;
+    top: 34px;
+    z-index: 2;
+}
+
+#play_img {
+    position: absolute;
+    width: 100px;
+    transform: translate(-50%, 50%);
+    left: 50%;
+    bottom: 50%;
+    z-index: 4;
+}
+
+#video_link:focus {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#video_link:focus + #cover {
+    opacity: 0;
+    transition: 0.5s;
+}
